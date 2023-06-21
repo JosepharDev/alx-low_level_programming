@@ -27,7 +27,7 @@ void print_alphabet_x10(void)
 
 	while (i <= 9)
 	{
-		print_alphabet_x10();
+		print_alpha();
 		i++;
 	}
 }
