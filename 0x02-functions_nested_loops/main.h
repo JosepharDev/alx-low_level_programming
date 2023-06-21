@@ -1,1 +1,1 @@
-#include "0-putchar.c"
+void _putchar(char *str);
