@@ -20,7 +20,7 @@ void print_to_98(int n)
 		{
 			if (n == 98)
 			{
-				pintf("%d\n", n);
+				printf("%d\n", n);
 				return;
 			}
 			printf("%d, ", n);
@@ -34,7 +34,7 @@ void print_to_98(int n)
 		{
 			if (n == 98)
 			{
-				pintf("%d\n", n);
+				printf("%d\n", n);
 				return;
 			}
 			printf("%d, ", n);
