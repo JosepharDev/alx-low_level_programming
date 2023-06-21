@@ -13,7 +13,7 @@ void print_alpha(void)
 		_putchar(c);
 		c++;
 	}
-	_putchar(c);
+	_putchar('\n');
 }
 
 /**
