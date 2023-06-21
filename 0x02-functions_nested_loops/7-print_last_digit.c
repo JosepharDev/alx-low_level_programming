@@ -8,5 +8,11 @@
  */
 int print_last_digit(int a)
 {
-	return ((a % 10) + 48);
+	if (a < 0)
+	{
+		_putchar(_abs(a % 10) + 48);
+		return (_abs(a % 10));
+	}
+	_putchar((a % 10) + 48);
+	return (a % 10);
 }
