@@ -1,11 +1,18 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
- * main - Start point
- *
- * Return: 0 (Success)
+ * _putchar - Fucntion  to print string in standard output
+ * @str:  First operand
+ * Return: void
  */
-int main(void)
+void _putchar(char *str)
 {
-	printf("_putchar\n");
-	return (0);
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		write(1, str[i], 1);
+		i++;
+	}
+	write(1, "\n", 1);
 }
