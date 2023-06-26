@@ -10,8 +10,8 @@ void puts_half(char *str)
 	int length = 0;
 	int half_length = length / 2;
 
-	while (str[lenght])
-		lenght++;
+	while (str[length])
+		length++;
 	if (length % 2 == 1)
 	{
 		write(STDOUT_FILENO, &str[half_length], length - half_length);
@@ -19,6 +19,6 @@ void puts_half(char *str)
 	else
 	{
 		str[half_length] = '\0';
-		write(STDOUT_FILENO, str, half_length)
+		write(STDOUT_FILENO, str, half_length);
 	}
 }
