@@ -6,18 +6,15 @@
  */
 void puts_half(char *str)
 {
-	int length = 0;
-	int half_length = length / 2;
+	int str_len = 0;
+	int i = 0;
 
-	while (str[length])
-		length++;
-	if (length % 2 == 1)
-	{
-		write(STDOUT_FILENO, &str[half_length], length - half_length);
-	}
-	else
-	{
-		str[half_length] = '\0';
-		write(STDOUT_FILENO, str, half_length);
-	}
+	while (str[str_len])
+		str_len++;
+
+	i = (str_len % 2 == 0) ? str_len / 2 : (str_len + 1) / 2;
+
+	while (str[i])
+		write(1, &str[i++], 1);
+	write(1, "\n", 1);
 }
