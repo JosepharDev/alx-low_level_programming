@@ -33,4 +33,5 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index);
 size_t print_listint_safe(const listint_t *head);
 listint_t *reverse_listint(listint_t **head);
 
+int check_ptr(const listint_t *, listint_t **, unsigned int);
 #endif /*LISTS_H*/

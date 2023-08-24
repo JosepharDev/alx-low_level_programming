@@ -61,7 +61,7 @@ size_t listint_len(const listint_t *h)
  */
 int check_ptr(const listint_t *ptr, listint_t **array, unsigned int size)
 {
-	while (size-- >= 0)
+	while (size--)
 	{
 		if (ptr == array[size])
 			return (1);
